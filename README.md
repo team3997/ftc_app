@@ -1,4 +1,4 @@
-## Setup
+# Setup
 ### Forking a repository
 #### Fork Repository
 Go to https://github.com/team3997/ftc_app and click Fork 
@@ -25,6 +25,54 @@ git remote set-url --push team3997 ""
 ##### Delete your local copy of master
 This is to minimize confusion. Developers should work on separate branches for their features. You will need to be on a branch other than master in order to do this. 
 git branch -D master
+
+# Basic Git Commands
+
+#### Creating a Branch
+Make sure you are inside the repository you want to create a branch for. For this example we will be inside FRC-2017
+
+Fetch the latest version of master or masterplan
+git fetch team3997 master
+
+#### Create a new branch off master or masterplan
+git checkout -b new-branch-name team3997/master
+Branch names should be descriptive of what they are doing
+
+#### Commit changes
+Once you have made changes locally, you will need to commit the changes to your branch
+
+List all changes
+git status
+
+Add changes from specific files
+git add <filename>
+The filename must include the path
+
+Add all changes
+git add .
+Be careful with this command
+
+Make a commit
+git commit
+Vim comes up. For Windows, press insert. For Mac, press i. Now you are ready to add the message.
+Commit messages should be descriptive of changes made. 
+When done, press the esc key and then press SHIFT+zz
+
+#### Push up the changes to your personal repository
+git push <GITHUB-USERNAME> HEAD
+
+
+#### Create a Pull Request
+When you are ready for your code to be review and merged into the master or masterplan branch, you will need to create a pull request
+
+Go to https://github.com/team3997/ftc_app/pulls
+Click on New pull request
+Click on compare across forks
+Change the head fork to your personal fork.
+Change the head branch to the branch you want to create the PR for.
+Click Create pull request
+Edit the description to add any details about what you did and any additional information needed.
+When ready, tag any teammates by their username for code review. 
 
 
 
