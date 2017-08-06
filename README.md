@@ -14,7 +14,7 @@ git clone -o team3997 git@github.com:team3997/ftc_app
 
 #### Add your personal fork
 In git bash:
-cd FRC-2017
+cd ftc_app
 git remote add <GITHUB-USERNAME> git@github.com:<GITHUB-USERNAME>/ftc_app
 git fetch <GITHUB-USERNAME>
 
