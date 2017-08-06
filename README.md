@@ -14,11 +14,12 @@ git clone -o team3997 git@github.com:team3997/ftc_app
 
 #### Add your personal fork
 In git bash:
+
 cd ftc_app
 
-git remote add <GITHUB-USERNAME> git@github.com:<GITHUB-USERNAME>/ftc_app
+git remote add GITHUB-USERNAME git@github.com:GITHUB-USERNAME/ftc_app
 
-git fetch <GITHUB-USERNAME>
+git fetch GITHUB-USERNAME
 
 ##### Remove the push URL from the main fork
 This is to prevent accidental pushes to the team3997 fork. Developers should usually work in their personal fork
@@ -61,7 +62,7 @@ Commit messages should be descriptive of changes made.
 When done, press the esc key and then press SHIFT+zz
 
 #### Push up the changes to your personal repository
-git push <GITHUB-USERNAME> HEAD
+git push GITHUB-USERNAME HEAD
 
 
 #### Create a Pull Request
