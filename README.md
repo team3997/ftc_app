@@ -4,11 +4,13 @@
 Go to https://github.com/team3997/ftc_app and click Fork 
 Fork to your local account
 
+#### Download Git Bash
+If you do not have git bash installed already: https://git-scm.com/downloads
+
 ##### Public key
 Follow the steps listed: https://help.github.com/articles/connecting-to-github-with-ssh/ 
 
 ##### Run these in git bash:
-If you do not have git bash installed already: https://git-scm.com/downloads
 Go to the directory where you want your clone located
 
 git clone -o team3997 git@github.com:team3997/ftc_app
