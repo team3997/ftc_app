@@ -10,6 +10,7 @@ Follow the steps listed: https://help.github.com/articles/connecting-to-github-w
 ##### Run these in git bash:
 If you do not have git bash installed already: https://git-scm.com/downloads
 Go to the directory where you want your clone located
+
 git clone -o team3997 git@github.com:team3997/ftc_app
 
 #### Add your personal fork
@@ -23,10 +24,12 @@ git fetch GITHUB-USERNAME
 
 ##### Remove the push URL from the main fork
 This is to prevent accidental pushes to the team3997 fork. Developers should usually work in their personal fork
+
 git remote set-url --push team3997 ""
 
 ##### Delete your local copy of master
 This is to minimize confusion. Developers should work on separate branches for their features. You will need to be on a branch other than master in order to do this. 
+
 git branch -D master
 
 # Basic Git Commands
@@ -35,28 +38,37 @@ git branch -D master
 Make sure you are inside the repository you want to create a branch for. For this example we will be inside FRC-2017
 
 Fetch the latest version of master or masterplan
+
 git fetch team3997 master
 
 #### Create a new branch off master or masterplan
 git checkout -b new-branch-name team3997/master
+
 Branch names should be descriptive of what they are doing
 
 #### Commit changes
 Once you have made changes locally, you will need to commit the changes to your branch
 
 List all changes
+
 git status
 
 Add changes from specific files
+
 git add <filename>
+
 The filename must include the path
 
 Add all changes
+
 git add .
+
 Be careful with this command
 
 Make a commit
+
 git commit
+
 Vim comes up. For Windows, press insert. For Mac, press i. Now you are ready to add the message.
 Commit messages should be descriptive of changes made. 
 When done, press the esc key and then press SHIFT+zz
